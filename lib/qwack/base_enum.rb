@@ -3,6 +3,7 @@
 require_relative './base'
 
 module Qwack
+  # Base module for user defined enums
   module BaseEnum
     include Qwack::Base
 
@@ -20,6 +21,7 @@ module Qwack
     def validation_errors(input, path = 'root')
       return [{ path: path, name: name, desc: 'Is not an allowed value', item: input }] \
         unless allowed_values.include?(input)
+
       []
     end
 

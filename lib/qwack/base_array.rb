@@ -3,6 +3,7 @@
 require_relative './base'
 
 module Qwack
+  # Base module for user defined arrays
   module BaseArray
     include Qwack::Base
 

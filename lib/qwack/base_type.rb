@@ -4,6 +4,7 @@ require 'pry'
 require_relative './base'
 
 module Qwack
+  # Base module for user defined types
   module BaseType
     include Qwack::Base
 

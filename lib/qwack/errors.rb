@@ -4,6 +4,7 @@ require 'pp'
 
 module Qwack
   module Errors
+    # Wrapper exception around validation errors
     class ValidationError < StandardError
       attr_reader :validation_errors
 

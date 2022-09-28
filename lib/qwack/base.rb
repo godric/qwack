@@ -3,6 +3,7 @@
 require_relative './errors'
 
 module Qwack
+  # Base module for types
   module Base
     def validation_errors(input, path = 'root')
       raise NotImplementedError

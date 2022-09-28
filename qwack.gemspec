@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name = 'qwack'
   s.version = Qwack::Version::STRING
   s.platform = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 2.6.0'
+  s.required_ruby_version = '>= 3.0'
   s.authors = ['Laurent Humez']
   s.description = <<-DESCRIPTION
     Qwack is an extensible, lightweight DLS to dynamically
@@ -26,11 +26,12 @@ Gem::Specification.new do |s|
     'homepage_uri' => 'https://github.com/godric/qwack',
     'source_code_uri' => 'https://github.com/godric/qwack',
     'bug_tracker_uri' => 'https://github.com/godric/qwack/issues',
+    'rubygems_mfa_required' => 'true'
   }
 
   s.add_development_dependency('bundler', '>= 1.15.0', '< 3.0')
+  s.add_development_dependency('pry')
+  s.add_development_dependency('rspec', '>= 3.11.0', '< 4.0')
   s.add_development_dependency('rubocop', '>= 1.36.0', '< 2.0')
   s.add_development_dependency('rubocop-rspec', '>= 2.13.0', '< 3.0')
-  s.add_development_dependency('rspec', '>= 3.11.0', '< 4.0')
-  s.add_development_dependency('pry')
 end
